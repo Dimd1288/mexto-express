@@ -1,0 +1,21 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "nodemon": "^2.0.20"
+  }
+}
