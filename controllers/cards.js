@@ -30,7 +30,7 @@ module.exports.setCardLike = (req, res) => {
     .catch(() => res.status(500).send({ message: 'Произошла ошибка' }));
 }
 
-module.exports.unsetCardLike = (req, res) => {
+module.exports.deleteCardLike = (req, res) => {
   Card.findByIdAndUpdate(
     req.params.cardId,
     { $pull: { likes: req.user._id } },
