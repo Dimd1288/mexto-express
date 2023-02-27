@@ -1,12 +1,14 @@
 const express = require('express');
+
 const { PORT = 3000 } = process.env;
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+
 const app = express();
 
 app.use((req, res, next) => {
   req.user = {
-    _id: '63f8b14b28e55dc080fb9434'
+    _id: '63f8b14b28e55dc080fb9434',
   };
   next();
 });

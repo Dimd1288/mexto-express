@@ -12,6 +12,6 @@ module.exports = {
   },
   rules: {
     indent: 'off',
-    'no-underscore-dangle': ['error', { allow: ['_place'] }],
+    'no-underscore-dangle': 'off',
   },
 };
